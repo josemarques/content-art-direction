@@ -3,12 +3,11 @@
 Plugin Name: Content Art Direction
 Plugin URI: http://feedingtherobots.com
 Description: Allows custom CSS and JS for each post or page
-Version: 0.1
+Version: 1.0
 Author: José Marques
-Author Email: jose@feedingtherobots.com
 License:
 
-  Copyright 2015 José Marques (jose@feedingtherobots.com)
+  Copyright 2015 José Marques
 
   This program is free software; you can redistribute it and/or modify
   it under the terms of the GNU General Public License, version 2, as 
@@ -108,18 +107,6 @@ class ContentArtDirection {
 <?php
 		endif;
 	}
-  
-	/**
-	 * Registers and enqueues stylesheets for the administration panel and the
-	 * public facing site.
-	 */
-	private function register_scripts_and_styles() {
-		if ( is_admin() ) {
-
-		} else {
-
-		} // end if/else
-	} // end register_scripts_and_styles
   
 } // end class
 new ContentArtDirection();
