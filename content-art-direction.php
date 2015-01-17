@@ -53,6 +53,7 @@ class ContentArtDirection {
 
 	function content_art_direction_meta() {
 	  	add_meta_box( 'artdirection_meta', 'Content Art Direction', array( &$this, 'content_art_direction_add_admin_ui' ), 'post', 'advanced', 'core' );
+	  	add_meta_box( 'artdirection_meta', 'Content Art Direction', array( &$this, 'content_art_direction_add_admin_ui' ), 'page', 'advanced', 'core' );
 	}
 
 	function content_art_direction_add_admin_ui( $post ) {
